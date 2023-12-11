@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:progress_bar/src/features/home_screen/widget/progress_bar.dart';
+import 'package:progress_bar/src/progress_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

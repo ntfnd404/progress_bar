@@ -1,6 +1,6 @@
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:progress_bar/src/features/home_screen/widget/progress_bar_render_object.dart';
+import 'package:progress_bar/src/progress_bar_render_object.dart';
 
 class ProgressBar extends LeafRenderObjectWidget {
   const ProgressBar({
