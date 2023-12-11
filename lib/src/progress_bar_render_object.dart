@@ -142,7 +142,7 @@ class ProgressBarRenderObject extends RenderBox {
   }
 
   void _updateThumbPosition(Offset localPosition) {
-    // Clam the position between the full width of the RenderObject
+    // Clamp the position between the full width of the RenderObject
     // to avoid f you drag the mouse of the window
     final num dx = localPosition.dx.clamp(0, size.width);
 
