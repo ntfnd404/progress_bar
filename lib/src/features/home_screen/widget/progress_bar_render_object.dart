@@ -8,11 +8,13 @@ class ProgressBarRenderObject extends RenderBox {
     required Color filedDotColor,
     required Color thumbColor,
     required double thumbHeight,
+    required double initialThumbValue,
   }) {
     _dotColor = dotColor;
     _filedDotColor = filedDotColor;
     _thumbColor = thumbColor;
     _thumbHeight = thumbHeight;
+    _currentThumbValue = initialThumbValue;
 
     _drag = HorizontalDragGestureRecognizer()
       ..onStart = (DragStartDetails details) {
@@ -27,7 +29,7 @@ class ProgressBarRenderObject extends RenderBox {
   late Color _filedDotColor;
   late Color _thumbColor;
   late double _thumbHeight;
-  double _currentThumbValue = 0.5;
+  late double _currentThumbValue;
   late HorizontalDragGestureRecognizer _drag;
 
   Color get dotColor => _dotColor;

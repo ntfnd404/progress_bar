@@ -9,12 +9,14 @@ class ProgressBar extends LeafRenderObjectWidget {
     required this.filedDotColor,
     required this.thumbColor,
     required this.thumbHeight,
+    this.initialThumbValue = 0.0,
   });
 
   final Color dotColor;
   final Color filedDotColor;
   final Color thumbColor;
   final double thumbHeight;
+  final double initialThumbValue;
 
   @override
   RenderObject createRenderObject(BuildContext context) =>
@@ -23,6 +25,7 @@ class ProgressBar extends LeafRenderObjectWidget {
         filedDotColor: filedDotColor,
         thumbColor: thumbColor,
         thumbHeight: thumbHeight,
+        initialThumbValue: initialThumbValue,
       );
 
   @override
@@ -45,5 +48,6 @@ class ProgressBar extends LeafRenderObjectWidget {
     properties.add(ColorProperty('filedDotColor', filedDotColor));
     properties.add(ColorProperty('thumbColor', thumbColor));
     properties.add(DoubleProperty('thumbHeight', thumbHeight));
+    properties.add(DoubleProperty('initialThumbValue', initialThumbValue));
   }
 }

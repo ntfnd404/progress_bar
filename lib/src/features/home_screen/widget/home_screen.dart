@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
             filedDotColor: Colors.red,
             thumbColor: Colors.black,
             thumbHeight: 20,
+            initialThumbValue: 0.5,
           ),
         ),
       ),
