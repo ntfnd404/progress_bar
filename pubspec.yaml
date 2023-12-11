@@ -1,5 +1,5 @@
 name: progress_bar
-description: "Progress bar using RenderObject."
+description: "Progress bar using RenderObjectgit ."
 publish_to: 'none'
 version: 0.1.0
 
@@ -13,7 +13,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: 3.0.1
 
 flutter:
   uses-material-design: true
